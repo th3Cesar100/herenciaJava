@@ -4,7 +4,9 @@ public class Masajista extends SeleccionFutbol{
 
     private String titulacion;
     private int aniosExperiencia;
-    
+    private int idMasajista;
+    private static int contadorMasajista;
+
     public String getTitulacion() {
         return titulacion;
     }

@@ -4,7 +4,9 @@ public class Futbolista extends SeleccionFutbol{
 
     private int dorsal;
     private String demarcacion;
-    
+    private int idFutbolista;
+    private static int contadorFutbolista;
+
     public int getDorsal() {
         return dorsal;
     }
