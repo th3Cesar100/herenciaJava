@@ -30,6 +30,12 @@ public class Entrenador extends SeleccionFutbol{
     public void setIdFederacion(int idFederacion) {
         this.idFederacion = idFederacion;
     }
+
+    @Override
+    public String toString() {
+        return "Entrenador [idEntrenador=" + idEntrenador + ", idFederacion=" + idFederacion + 
+        super.toString() + "]";
+    }
     
     
 }

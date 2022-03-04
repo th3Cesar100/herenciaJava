@@ -39,6 +39,12 @@ public class Futbolista extends SeleccionFutbol{
         this.demarcacion = demarcacion;
     }
 
+    @Override
+    public String toString() {
+        return "Futbolista [demarcacion=" + demarcacion + ", dorsal=" + dorsal + ", idFutbolista=" + idFutbolista + 
+        super.toString() + "]";
+    }
+
     
     
 }

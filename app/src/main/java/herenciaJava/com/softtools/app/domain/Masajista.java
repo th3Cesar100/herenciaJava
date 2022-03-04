@@ -39,6 +39,13 @@ public class Masajista extends SeleccionFutbol{
         this.aniosExperiencia = aniosExperiencia;
     }
 
+    @Override
+    public String toString() {
+        return "Masajista [aniosExperiencia=" + aniosExperiencia + ", idMasajista=" + idMasajista + ", titulacion="
+                + titulacion +
+                super.toString() + "]";
+    }
+
     
     
 }

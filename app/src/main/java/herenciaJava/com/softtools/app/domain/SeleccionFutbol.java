@@ -32,6 +32,12 @@ public class SeleccionFutbol {
     public void setEdad(int edad) {
         this.edad = edad;
     }
+    @Override
+    public String toString() {
+        return "SeleccionFutbol [apellidos=" + apellidos + ", edad=" + edad + ", nombre=" + nombre + "]";
+    }
+
+    
 
     
     
