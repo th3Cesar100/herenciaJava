@@ -5,7 +5,15 @@ public class SeleccionFutbol {
     protected String nombre;
     protected String apellidos;
     protected int edad;
-    
+
+    public SeleccionFutbol(){
+
+    }
+    public SeleccionFutbol(String nombre, String apellidos, int edad){
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.edad = edad;    
+    }
     public String getNombre() {
         return nombre;
     }

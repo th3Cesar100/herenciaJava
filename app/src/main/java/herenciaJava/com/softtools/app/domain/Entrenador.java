@@ -6,6 +6,23 @@ public class Entrenador extends SeleccionFutbol{
     private int idEntrenador;
     private static int contadorEntrenador;
 
+    public Entrenador(){
+        this.idEntrenador = ++Entrenador.contadorEntrenador;
+    }
+
+    public Entrenador(int idFederacion){
+        this.idEntrenador = ++Entrenador.contadorEntrenador;
+        this.idFederacion = idFederacion;
+    }
+
+    public Entrenador(int idFederacion, String nombre, String apellidos, int edad){
+        super(nombre,apellidos,edad);
+        this.idEntrenador = ++Entrenador.contadorEntrenador;
+        this.idFederacion = idFederacion;
+    }
+
+
+
     public int getIdFederacion() {
         return idFederacion;
     }

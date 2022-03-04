@@ -7,6 +7,25 @@ public class Masajista extends SeleccionFutbol{
     private int idMasajista;
     private static int contadorMasajista;
 
+    public Masajista(){
+        this.idMasajista = ++Masajista.contadorMasajista;
+    }
+
+    public Masajista(String titulacion, int aniosExperiencia){
+        this.idMasajista = ++Masajista.contadorMasajista;
+        this.titulacion = titulacion;
+        this.aniosExperiencia = aniosExperiencia;
+
+    }
+
+    public Masajista(String titulacion, int aniosExperiencia, String nombre, String apellidos, int edad){
+        super(nombre,apellidos,edad);
+        this.idMasajista = ++Masajista.contadorMasajista;
+        this.titulacion = titulacion;
+        this.aniosExperiencia = aniosExperiencia;
+
+    }
+
     public String getTitulacion() {
         return titulacion;
     }
